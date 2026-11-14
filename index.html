@@ -263,7 +263,7 @@ if (bp) S.push(`<section id="reservar"><div class="wrap">
   <div class="head"><div class="eyebrow">Reserva online</div><h2>${esc(bp.titulo||"Reserva en un minuto")}</h2>
   <p>${esc(bp.texto||"Elige el servicio y el día. La confirmación te llega al momento.")}</p></div>
   <div class="bp"><div class="barrypets-reservar" data-negocio="${bp.negocio}"${/^[\w-]{1,60}$/.test(bp.local||"") ? ` data-local="${bp.local}"` : ''} data-formato="${bp.formato === "boton" ? "boton" : "servicios"}" data-color="${esc(C.color)}"></div></div>
-  <p class="bp-por"><a href="https://barrypets.es/negocios/${bp.negocio}" target="_blank" rel="noopener">Reservas con <img src="assets/barrypets.png" alt="barrypets" width="96" height="21"> · Ver nuestra ficha</a></p>
+  <p class="bp-por"><a href="https://barrypets.es" target="_blank" rel="noopener">Reservas con <img src="assets/barrypets.png" alt="barrypets" width="96" height="21"></a></p>
   ${bp.tarjeta ? `<p class="bp-card">¿Ya eres cliente? <a href="https://barrypets.es/tarjeta/${bp.negocio}" target="_blank" rel="noopener">Hazte la tarjeta de cliente</a> y acumula sellos en cada visita.</p>` : ''}
 </div></section>`);
 
@@ -342,7 +342,7 @@ S.push(`<section id="cta"><div class="wrap"><div class="box">
 
 S.push(`<footer><div class="wrap">
   © ${new Date().getFullYear()} ${esc(C.nombre)}${C.direccion ? ` · ${esc(C.direccion)}` : ''}
-  ${bp ? `<br><a class="bp-pie" href="https://barrypets.es/negocios/${bp.negocio}" target="_blank" rel="noopener">Reservas online con <img src="assets/barrypets.png" alt="barrypets" width="96" height="21"></a>` : ''}
+  ${bp ? `<br><a class="bp-pie" href="https://barrypets.es" target="_blank" rel="noopener">Reservas online con <img src="assets/barrypets.png" alt="barrypets" width="96" height="21"></a>` : ''}
   ${C.demo ? '' : '<br><a href="legal.html#aviso">Aviso legal</a> · <a href="legal.html#privacidad">Política de privacidad</a>'}
 </div></footer>`);
 

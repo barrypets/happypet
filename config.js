@@ -20,8 +20,16 @@ const CONFIG = {
   mapa: "https://maps.google.com/?cid=7872680113833965685",
   instagram: "https://instagram.com/happypetmadrid",
 
-  // barrypets: la demo es oculta y su widget no responde al público. Al darse de alta,
-  // añadir aquí el bloque barrypets con negocio: su uid real.
+  // Reservas de barrypets: la demo (V2tI...) tiene demo.webBooking, así que su caja responde
+  // al público aunque no salga en el mapa. Al darse de alta: su uid real.
+  barrypets: {
+    negocio: "V2tIoEUjEbV6KfyVmQpBsDhc5SW2",
+    formato: "servicios",
+    local: "",
+    tarjeta: false,
+    titulo: "Reserva en un minuto",
+    texto: "Elige el servicio y el día, sin crear cuenta. La confirmación te llega al momento."
+  },
 
   hero: "assets/hero.jpg",
 
