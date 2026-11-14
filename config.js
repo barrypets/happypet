@@ -20,10 +20,10 @@ const CONFIG = {
   mapa: "https://maps.google.com/?cid=7872680113833965685",
   instagram: "https://instagram.com/happypetmadrid",
 
-  // Reservas de barrypets: la demo (V2tI...) tiene demo.webBooking, así que su caja responde
-  // al público aunque no salga en el mapa. Al darse de alta: su uid real.
+  // Reserva de DEMO (assets/reserva-demo.js): imita barrypets con datos de ejemplo, no guarda nada.
+  // Al darse de alta: negocio = su uid real y volver a la carga de la Base Web en index.html.
   barrypets: {
-    negocio: "V2tIoEUjEbV6KfyVmQpBsDhc5SW2",
+    negocio: "demo",
     formato: "servicios",
     local: "",
     tarjeta: false,

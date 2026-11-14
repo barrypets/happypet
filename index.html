@@ -356,10 +356,8 @@ document.body.insertAdjacentHTML("beforeend", S.join(""));
 // insertAdjacentHTML no ejecuta <script>: el widget se carga aparte, después de pintar su caja.
 // barrypets.es/reservas.js sigue cada publicación de barrypets (se actualiza solo). Si aún no existe
 // o no responde, la copia de assets/. Servicios, fotos y precios: en directo en cada visita.
-if (bp) {
-  const carga = (src, siFalla) => { const w = Object.assign(document.createElement("script"), { src, async: true, onerror: siFalla }); w.dataset.origin = "https://barrypets.es"; document.body.appendChild(w); };
-  carga("https://barrypets.es/reservas.js", () => carga("assets/barrypets.js"));
-}
+// DEMO: reserva de ejemplo, sin barrypets detrás (assets/reserva-demo.js). Al vender, volver a la carga de la Base Web.
+if (bp) document.body.appendChild(Object.assign(document.createElement("script"), { src: "assets/reserva-demo.js" }));
 </script>
 </body>
 </html>
